@@ -5,4 +5,6 @@ export class AppService {
   async getVersion(): Promise<string> {
     return 'Version-1';
   }
+
+  async newTest(): Promise<void> {}
 }
