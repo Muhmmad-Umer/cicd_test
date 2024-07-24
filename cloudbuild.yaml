@@ -15,3 +15,7 @@ steps:
         "push",
         "us-east4-docker.pkg.dev/citric-kit-430408-u6/cicd-test/production",
       ]
+
+options:
+  logging: CLOUD_LOGGING_ONLY  # or NONE if you do not need logging
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
