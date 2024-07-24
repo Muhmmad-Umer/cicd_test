@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: cicd-test
+  name: cicd-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cicd-test
+  template:
+    metadata:
+      labels:
+        app: cicd-test
+    spec:
+      containers:
+        - image: us-east4-docker.pkg.dev/citric-kit-430408-u6/cicd-test/production
+          name: cicd-test
+          ports:
+            - containerPort: 3000
