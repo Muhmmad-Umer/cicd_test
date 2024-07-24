@@ -6,5 +6,5 @@ export class AppService {
     return 'Version-1';
   }
 
-  async newTest2(): Promise<void> {}
+  async newTest1(): Promise<void> {}
 }
